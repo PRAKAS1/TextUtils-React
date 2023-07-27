@@ -6,11 +6,11 @@ import Navbar from "react-bootstrap/Navbar";
 
 import PropTypes from "prop-types";
 
-import { Form, FormControl, Button } from "react-bootstrap";
+import { Form} from "react-bootstrap";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
- 
+
 
 export default function CustomNavbar(props) {
 
@@ -30,8 +30,8 @@ export default function CustomNavbar(props) {
 
       <Container>
 
-        <Navbar.Brand as={Link} to="/">
-
+        {/* <Navbar.Brand as={Link} to="/"> */}
+        <Navbar.Brand herf="#">
           {props.title}
 
         </Navbar.Brand>
@@ -42,17 +42,17 @@ export default function CustomNavbar(props) {
 
           <Nav className="me-auto">
 
-            <Nav.Link as={Link} to="/">
-
+            {/* <Nav.Link as={Link} to="/"> */}
+    <Nav.Link herf="#">
               Home
 
             </Nav.Link>
 
-            <Nav.Link as={Link} to="/about">
+            {/* <Nav.Link as={Link} to="/about">
 
               About
 
-            </Nav.Link>
+            </Nav.Link> */}
 
           </Nav>
 
@@ -68,7 +68,7 @@ export default function CustomNavbar(props) {
 
       </Container>
 
- 
+
 
       <div className="container">
 
@@ -102,7 +102,7 @@ export default function CustomNavbar(props) {
 
 }
 
- 
+
 
 CustomNavbar.prototype = {
 
@@ -110,7 +110,7 @@ CustomNavbar.prototype = {
 
 };
 
- 
+
 
 // CustomNavbar.defaultProps = {
 
